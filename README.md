@@ -1,6 +1,6 @@
-# scheduler
+# myScheduler
 
-A new Flutter project.
+An app meant to house a school schedule which plots your classes in chronological order on the timeline.
 
 ## Getting Started
 
