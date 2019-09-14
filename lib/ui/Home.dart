@@ -9,6 +9,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  //Dummy information
   static var class1 = new ClassEvent("Break", 545, false, "12:00 am");
   static var class2 = new ClassEvent("PHYS 118-002", 50, true, "9:05 am");
   static var class3 = new ClassEvent("Break", 145, false, "9:55 am");
