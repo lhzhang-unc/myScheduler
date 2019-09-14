@@ -1,16 +1,5 @@
 # myScheduler
 
-An app meant to house a school schedule which plots your classes in chronological order on the timeline.
+An app meant to house a school schedule which plots your classes in chronological order on the timeline. This repository includes all files needed to build the project using the flutter framework.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_20190914-161150](https://user-images.githubusercontent.com/54411084/64913339-0bdb1f80-d70c-11e9-8cf4-3fd364c6c17b.png)
