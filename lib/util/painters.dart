@@ -11,21 +11,30 @@ class TimelinePainter extends CustomPainter {
       ..color = Colors.white
       ..style = PaintingStyle.stroke
       ..strokeWidth = 3.0;
-    for (int i = 0; i <= 96; i++) {
+    for (int i = 0; i <= 112; i++) {
       if (i % 4 == 0) {
         TextSpan span;
-        if (i == 0)
+        if (i < 8)
+          span = TextSpan(style: TextStyle(color: Colors.white, fontSize: 15),
+              text: '${((i+40) ~/ 4)}:00 pm');
+        else if (i-8 == 0)
           span = TextSpan(style: TextStyle(color: Colors.white, fontSize: 15),
               text: '12:00 am');
-        else if (i / 4 == 12)
+        else if ((i-8) / 4 == 12)
           span = TextSpan(style: TextStyle(color: Colors.white, fontSize: 15),
               text: '12:00 pm');
-        else if (i / 4 > 12)
+        else if ((i-8) / 4 > 12 && (i-8) / 4 < 24)
           span = TextSpan(style: TextStyle(color: Colors.white, fontSize: 15),
-              text: '${(i ~/ 4) - 12}:00 pm');
+              text: '${((i-8) ~/ 4) - 12}:00 pm');
+        else if ((i-8) / 4 == 24)
+          span = TextSpan(style: TextStyle(color: Colors.white, fontSize: 15),
+              text: '12:00 am');
+        else if ((i-8) / 4 == 25)
+          span = TextSpan(style: TextStyle(color: Colors.white, fontSize: 15),
+              text: '1:00 am');
         else
           span = TextSpan(style: TextStyle(color: Colors.white, fontSize: 15),
-              text: '${(i ~/ 4)}:00 am');
+              text: '${((i-8) ~/ 4)}:00 am');
         TextPainter tp = TextPainter(text: span,
             textAlign: TextAlign.left,
             textDirection: TextDirection.ltr);
