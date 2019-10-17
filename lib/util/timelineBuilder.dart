@@ -8,8 +8,6 @@ class TimeLine extends StatelessWidget {
   final ScrollController _syncController1 =
       new ScrollController(); // make seperate controllers
   final ScrollController _syncController2 = new ScrollController();
-  final ScrollController _syncController3 =
-      new ScrollController(); // for each scrollables
   final List<ClassEvent> classList;
 
   TimeLine(
